@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>方程式の解法</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- JavaScript -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.4.5/jsxgraphcore.js"></script>
+	<script src="./solvingEquations.js" defer></script>
+</head>
+<body>
+	<h1>方程式の解法</h1>
+	<hr>
+	<h3>〇アルゴリズムを理解する</h3>
+	<input type="submit" onclick="location.href='dichotomy.html'" value="二分法">
+	<input type="submit" onclick="location.href='newton.html'" value="ニュートン法">
+	<br>
+	<table>
+	<td>
+	<h3>〇実際に方程式の根を求めよう</h3>
+	F(x) = 1/4x^2 -5
+	<br><br>
+
+	初期値
+	<br>
+	2分法：
+	<br>
+	a<input type="text" id="first1">
+	<br>
+	b<input type="text" id="first2">
+	<br><br>
+	ニュートン法：
+	<br>
+	<input type="text" id="first5">
+	<br><br>
+	<button onclick="nibunnhou()">2分法を実行</button>
+	<button onclick="newtonhou()">ニュートン法を実行</button>
+	</td>
+	<!-- Graph -->
+	<td>
+	二分法
+	<div id="jxgbox" class="jxgbox" style="width:480px; height:320px;"></div>
+	<pre id="output1"></pre>
+	</td>
+	<!-- Graph -->
+	<td>
+	ニュートン法
+	<div id="jxgbox2" class="jxgbox2" style="width:480px; height:320px;"></div>
+	<pre id="output2"></pre>
+	</td>
+	</table>
+</body>
+</html>
